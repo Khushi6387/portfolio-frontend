@@ -11,8 +11,8 @@ import { isValidEmail } from '../../utils/helpers';
 import personalInfo from '../../data/personalInfo';
 import styles from './Contact.module.css';
 
-/* ── API URL from environment variable ───────────────────── */
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+/* ── API URL — uses env var, falls back to live Render backend ── */
+const API_URL = import.meta.env.VITE_API_URL || 'https://portfolio-backend-p5sq.onrender.com';
 
 /* ── Static data ─────────────────────────────────────────── */
 const contactDetails = [
